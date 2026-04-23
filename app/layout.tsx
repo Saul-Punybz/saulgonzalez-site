@@ -94,6 +94,7 @@ const schema = {
         'https://github.com/Saul-Andres',
         'https://github.com/Saul-Punybz',
         'https://medium.com/@buscasaul',
+        'https://medium.com/@buscasaul/saul-a-gonz%C3%A1lez-alonso-empresario-ingeniero-estratega-tecnol%C3%B3gico-mentor-de-negocios-1ee6e915ef5f',
         'https://puny.bz',
       ],
       birthPlace: { '@type': 'Place', name: 'Arecibo, Puerto Rico, United States' },

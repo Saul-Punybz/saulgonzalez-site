@@ -64,6 +64,8 @@ export default function Quiz() {
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
   const [source, setSource] = useState({ referrer: '', utm_source: '', utm_medium: '', utm_campaign: '' })
+  const [honeypot, setHoneypot] = useState('')
+  const formLoadTime = useRef(Date.now())
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
@@ -117,6 +119,8 @@ export default function Quiz() {
           concern: label.concern(form.concern),
           budget: budgetLabel,
           message: form.message,
+          _hp: honeypot,
+          _ts: formLoadTime.current,
           ...source,
         }),
       })
@@ -339,6 +343,17 @@ export default function Quiz() {
               <textarea rows={4} placeholder="Cuéntame más (opcional) — qué tienes, qué quieres lograr" value={form.message}
                 onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
                 className={inputCls + ' resize-none'} />
+              {/* Honeypot — hidden from humans, bots fill it in */}
+              <input
+                type="text"
+                name="website"
+                value={honeypot}
+                onChange={e => setHoneypot(e.target.value)}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none', height: 0, width: 0 }}
+              />
               <button type="submit" disabled={sending}
                 className="btn-glow btn-gradient disabled:opacity-60 disabled:cursor-wait text-white font-bold py-5 rounded-2xl transition-all mt-2 flex items-center justify-center gap-2 text-base">
                 {sending ? (

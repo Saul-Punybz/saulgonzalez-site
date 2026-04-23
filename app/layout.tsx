@@ -20,12 +20,14 @@ export const metadata: Metadata = {
     url: 'https://saulgonzalez.pro',
     siteName: 'Saul A. González',
     locale: 'es_PR',
+    images: [{ url: 'https://saulgonzalez.pro/og.png', width: 1200, height: 630, alt: 'Saul A. González — Consultoría Digital' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Saul A. González — Consultoría Digital',
     description: 'WebApps, Apps Móviles e Integración de IA. 15 años. Consulta gratis.',
     creator: '@buscasaul',
+    images: ['https://saulgonzalez.pro/og.png'],
   },
   icons: {
     icon: '/icon.svg',

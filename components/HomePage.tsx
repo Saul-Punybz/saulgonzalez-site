@@ -1108,10 +1108,28 @@ export default function HomePage() {
                 {/* Puny.bz */}
                 <a href="https://puny.bz" target="_blank" rel="noopener noreferrer"
                   className="group flex items-center gap-3 px-5 py-3.5 bg-[#55a6e6]/[0.08] hover:bg-[#55a6e6]/15 border border-[#55a6e6]/20 hover:border-[#55a6e6]/40 rounded-2xl transition-all hover:shadow-[0_4px_20px_rgba(85,166,230,0.15)]">
-                  <img src="/puny-logo.svg" alt="Puny.bz" className="h-5 w-auto" />
+                  {/* Puny.bz glyph — 3 colored blocks */}
+                  <svg viewBox="0 0 58 62" className="h-5 w-auto flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="29.2" y="36.6" width="25.3" height="25.3" rx="6.7" fill="#4CD0B6"/>
+                    <rect x="29.2" y="7.3" width="25.3" height="25.3" rx="6.7" fill="#FF6F61"/>
+                    <rect x="0" y="7.3" width="25.3" height="54.6" rx="6.7" fill="#55A6E6"/>
+                  </svg>
                   <div>
                     <p className="text-[#55a6e6] font-bold text-sm leading-none">Puny.bz</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Co-fundador</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Co-fundador & COO</p>
+                  </div>
+                </a>
+
+                {/* Puny.bz Saga */}
+                <a href="https://puny.bz/saga" target="_blank" rel="noopener noreferrer"
+                  className="group flex items-center gap-3 px-5 py-3.5 bg-violet-500/[0.08] hover:bg-violet-500/15 border border-violet-500/20 hover:border-violet-500/40 rounded-2xl transition-all hover:shadow-[0_4px_20px_rgba(112,48,239,0.15)]">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-violet-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2}>
+                    <rect x="3" y="4" width="18" height="18" rx="3"/>
+                    <path strokeLinecap="round" d="M8 10h8M8 14h5"/>
+                  </svg>
+                  <div>
+                    <p className="text-violet-400 font-bold text-sm leading-none">Agenda conmigo</p>
+                    <p className="text-slate-500 text-xs mt-0.5">puny.bz/saga</p>
                   </div>
                 </a>
 
@@ -1148,29 +1166,6 @@ export default function HomePage() {
         </section>
 
         {/* ── FOOTER ── */}
-        {/* ── Puny.bz Saga — Book a session ── */}
-        <section className="py-12 px-6 bg-white dark:bg-[#090820] border-t border-slate-100 dark:border-white/[0.06]">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 rounded-2xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/[0.08]">
-              <div className="flex items-center gap-4">
-                <img src="/puny-logo.svg" alt="Puny.bz" className="h-9 w-auto flex-shrink-0" onError={e => { (e.target as HTMLImageElement).src = '/puny-logo.png' }} />
-                <div>
-                  <p className="font-bold text-slate-900 dark:text-white text-sm">Reserva una sesión conmigo</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Coffee chat $6 · 1 hora $150 · 3 horas $200</p>
-                </div>
-              </div>
-              <a
-                href="https://puny.bz/saga"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-gradient text-white font-bold px-6 py-3 rounded-xl text-sm whitespace-nowrap flex-shrink-0 transition-all hover:opacity-90"
-              >
-                Bukea conmigo →
-              </a>
-            </div>
-          </div>
-        </section>
-
         <footer className="py-10 px-6 border-t border-slate-100 dark:border-white/[0.06] bg-white dark:bg-[#090820]">
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 dark:text-slate-600 text-sm mb-6">

@@ -130,6 +130,8 @@ const schema = {
         'https://puny.bz',
         'https://www.youtube.com/@punybz',
         'https://www.youtube.com/channel/UC5Z59quRfeeG1ttO460me7g',
+        'https://www.crunchbase.com/person/saul-gonzalez',
+        'https://pitchbook.com/profiles/company/761681-80',
       ],
       birthPlace: { '@type': 'Place', name: 'Arecibo, Puerto Rico, United States' },
       jobTitle: 'Chief Operating Officer, Co-Founder & Software Engineer',
@@ -190,7 +192,7 @@ const schema = {
         { '@type': 'Person', name: 'Sebastian Salinas', description: 'Mentor empresarial de Saul A. González Alonso. YCS PR — ecosistema startup de Puerto Rico.' },
         { '@type': 'Person', name: 'Jennifer Hopp', description: 'Mentora de Saul A. González Alonso en el ecosistema de venture capital y startups de Puerto Rico.' },
         { '@type': 'Person', name: 'DJ Lampitt', description: 'Mentor de Saul A. González Alonso. Ideation Collab, Puerto Rico startup ecosystem.' },
-        { '@type': 'Organization', name: 'ATO Ventures', description: 'Firma de capital de riesgo en Puerto Rico. Inversionista y mentor en Puny.bz.' },
+        { '@type': 'Organization', name: 'ATO Ventures', url: 'https://atoventures.com', description: 'Firma de capital de riesgo en Puerto Rico. Inversionista y mentor en Puny.bz. Puny.bz aparece en su portafolio oficial en atoventures.com/es/portfolio/' },
       ],
       founder: [
         {
@@ -293,6 +295,34 @@ const schema = {
           url: 'https://re3d.org/3d-printing-connectivity-in-post-maria-puerto-rico/',
           publisher: { '@type': 'Organization', name: 'RE3D', url: 'https://re3d.org' },
           description: 'Artículo de RE3D sobre conectividad y tecnología en Puerto Rico post-Huracán María, contexto en el que Saul González operó y contribuyó al ecosistema tecnológico de la isla.',
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Impulsan plataforma para que empresarios creen sus páginas digitales en cinco minutos',
+          url: 'https://guayacan.org/impulsan-plataforma-para-que-empresarios-creen-sus-paginas-digitales-en-cinco-minutos/',
+          publisher: { '@type': 'Organization', name: 'Guayacán', url: 'https://guayacan.org' },
+          description: 'Guayacán, la organización líder de emprendimiento en Puerto Rico, cubrió la plataforma Puny.bz cofundada por Saul A. González Alonso, destacando cómo permite a empresarios crear su presencia digital en cinco minutos.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'Saul González — Crunchbase Profile',
+          url: 'https://www.crunchbase.com/person/saul-gonzalez',
+          publisher: { '@type': 'Organization', name: 'Crunchbase', url: 'https://www.crunchbase.com' },
+          description: 'Perfil de Saul A. González Alonso en Crunchbase, la base de datos global de referencia sobre fundadores, startups e inversiones. Perfil como cofundador de Puny.bz.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'Puny.bz — PitchBook Company Profile',
+          url: 'https://pitchbook.com/profiles/company/761681-80',
+          publisher: { '@type': 'Organization', name: 'PitchBook', url: 'https://pitchbook.com' },
+          description: 'Perfil de Puny.bz en PitchBook, plataforma líder de datos financieros y de capital de riesgo. Registra la empresa, sus fundadores Saul González y Jonathan Díaz, e inversiones.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'Puny.bz — ATO Ventures Portfolio',
+          url: 'https://atoventures.com/es/portfolio/',
+          publisher: { '@type': 'Organization', name: 'ATO Ventures', url: 'https://atoventures.com' },
+          description: 'Puny.bz aparece en el portafolio oficial de ATO Ventures, firma de capital de riesgo en Puerto Rico. Confirma la inversión de ATO Ventures en Puny.bz cofundada por Saul A. González Alonso.',
         },
         {
           '@type': 'NewsArticle',

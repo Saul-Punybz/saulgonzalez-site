@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
   },
+  verification: {
+    other: { 'msvalidate.01': 'A55D0ABE58E66961B21F784DD7BEEC31' },
+  },
   alternates: {
     canonical: 'https://saulgonzalez.pro',
     languages: {

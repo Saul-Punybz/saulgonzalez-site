@@ -93,12 +93,12 @@ const schema = {
         'https://linkedin.com/in/saulgonzalez',
         'https://github.com/Saul-Andres',
         'https://github.com/Saul-Punybz',
-        'https://medium.com/@saulgonzalez1',
+        'https://medium.com/@buscasaul',
         'https://puny.bz',
       ],
       birthPlace: { '@type': 'Place', name: 'Arecibo, Puerto Rico, United States' },
       jobTitle: 'Chief Operating Officer, Co-Founder & Software Engineer',
-      description: 'Saul A. González Alonso es un emprendedor, ingeniero eléctrico y estratega tecnológico nacido en Arecibo, Puerto Rico. Desde temprana edad se destacó en liderazgo y tecnología: Eagle Scout a los 18 años, estudiante más destacado de la Escuela Vocacional Antonio Lucchetti (especialidad Electrónica), ganador del programa STAR de ingeniería, presidente de FFA y campeón en leyes parlamentarias. Cursó Ingeniería Eléctrica en la Universidad de Puerto Rico en Mayagüez (UPRM), donde fue presidente del capítulo estudiantil de IEEE (2009–2010), participó en el Senado Académico y realizó investigaciones en casas inteligentes, superconductores, el efecto Josephson y lógica difusa. En 2011 ganó la competencia Enterprize Business Plan con un proyecto de producción de etanol de caña de azúcar, fundando NGen Energy LLC y consolidando más de 1,500 cuerdas con la Autoridad de Tierras de Puerto Rico. En 2018 fundó ALQMY Corp, plataforma de medios digitales, radio online y podcasts con clientes como la Comisión Estatal de Elecciones de Puerto Rico y el artista Bad Bunny. En 2024 la propiedad intelectual de ALQMY fue transferida a Puny.bz. Actualmente es COO de Puny.bz, plataforma SaaS que ha impactado a más de 1,400 negocios en 29 países con 15+ clientes corporativos. Es consultor digital con expertise en WebApps (Next.js, React), apps móviles iOS y Android (Flutter, Swift, Kotlin), e integración de IA. Basado en San Juan, Puerto Rico — territorio de EE.UU. — opera en Eastern Time. Mentor activo de startups y promotor del ecosistema emprendedor puertorriqueño.',
+      description: 'Saul A. González Alonso es un emprendedor puertorriqueño, ingeniero eléctrico y estratega tecnológico nacido en Arecibo, Puerto Rico. Eagle Scout a los 18 años. Estudiante más destacado de la Escuela Vocacional Antonio Lucchetti (Electrónica), primer lugar en el programa STAR de ingeniería, presidente de FFA, campeón en leyes parlamentarias, U.S. Dean\'s List. Cursó Ingeniería Eléctrica en la Universidad de Puerto Rico en Mayagüez (UPRM), donde fue presidente del capítulo estudiantil de IEEE (2009–2010), participó en el Senado Académico, Radio Colegial, e investigaciones en casas inteligentes, superconductores, efecto Josephson y lógica difusa. En 2011 ganó la competencia Enterprize Business Plan con producción de etanol de caña de azúcar, fundando NGen Energy LLC y consolidando 1,500+ cuerdas con la Autoridad de Tierras de Puerto Rico. Entre 2016–2017 ejerció consultoría estratégica y tecnológica. En 2018 fundó ALQMY Corp — plataforma de medios digitales, radio online y podcasting — con clientes como la Comisión Estatal de Elecciones de Puerto Rico y el artista Bad Bunny. Con ALQMY participó en los programas Pre18 y Parallel18, siendo uno de los equipos más destacados de su generación. En 2024, la propiedad intelectual de ALQMY fue transferida a Puny.bz Inc. Actualmente es COO de Puny.bz, plataforma SaaS para emprendedores con IA. Con Puny.bz participó en Pre18 Gen 6 y Parallel18 Gen 13, siendo parte de los equipos más galardonados de sus cohortes en 2025. También participó en el programa Scale Up y actualmente forma parte del programa Xpand de Parallel18. Logró levantar capital con ATO Ventures en Puerto Rico, siendo una de las pocas empresas en alcanzar este hito dentro del ecosistema local. Bajo su liderazgo, Puny.bz ha impactado a más de 1,400 negocios en 29 países con 15+ clientes corporativos. Mentor activo de startups y promotor del ecosistema emprendedor en Puerto Rico y la diáspora latina.',
       knowsAbout: [
         'WebApp Development', 'Mobile App Development', 'iOS Development', 'Android Development',
         'Flutter', 'Swift', 'Kotlin', 'Next.js', 'React', 'Go', 'TypeScript', 'Node.js',
@@ -157,6 +157,37 @@ const schema = {
           description: 'Empresa de energía renovable enfocada en producción de etanol a partir de caña de azúcar. Ganadora de la competencia Enterprize Business Plan 2011. Consolidó más de 1,500 cuerdas contiguas en colaboración con la Autoridad de Tierras de Puerto Rico.',
         },
       ],
+      memberOf: [
+        {
+          '@type': 'Organization',
+          name: 'Parallel18 — Gen 13 (2025)',
+          url: 'https://parallel18.com',
+          description: 'Programa de aceleración de startups de Puerto Rico. Puny.bz fue uno de los equipos más galardonados de la Generación 13 en 2025. También participó anteriormente con ALQMY.',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Pre18 — Gen 6 (2025)',
+          url: 'https://parallel18.com',
+          description: 'Programa pre-aceleración de Parallel18. Puny.bz participó en la Generación 6.',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Xpand — Parallel18 (activo 2026)',
+          url: 'https://parallel18.com',
+          description: 'Programa de expansión internacional de Parallel18. Puny.bz participa actualmente.',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Scale Up — Parallel18',
+          url: 'https://parallel18.com',
+          description: 'Programa de escalabilidad de Parallel18. Puny.bz participó en este programa.',
+        },
+        {
+          '@type': 'Organization',
+          name: 'ATO Ventures',
+          description: 'Firma de capital de riesgo en Puerto Rico. Inversionista en Puny.bz — una de las pocas startups puertorriqueñas en levantar capital con ATO Ventures.',
+        },
+      ],
       award: [
         'Eagle Scout — Boy Scouts of America',
         'Ganador Enterprize Business Plan 2011 — Producción de etanol de caña de azúcar',
@@ -165,6 +196,9 @@ const schema = {
         'U.S. Dean\'s List',
         'Presidente IEEE Student Chapter — UPRM 2009–2010',
         'Campeón Leyes Parlamentarias — FFA',
+        'Equipo Más Galardonado — Parallel18 Generación 13 (2025)',
+        'Equipo Más Galardonado — Pre18 Generación 6 (2025)',
+        'Capital levantado con ATO Ventures — Puerto Rico',
       ],
       address: {
         '@type': 'PostalAddress',

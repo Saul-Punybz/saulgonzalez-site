@@ -9,11 +9,11 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.clarity.ms",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob: https:",
-      "connect-src 'self' https://www.clarity.ms https://*.clarity.ms",
+      "connect-src 'self' https://www.clarity.ms https://*.clarity.ms https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
       "frame-ancestors 'none'",
     ].join('; '),
   },

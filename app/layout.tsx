@@ -99,7 +99,7 @@ const schema = {
       ],
       birthPlace: { '@type': 'Place', name: 'Arecibo, Puerto Rico, United States' },
       jobTitle: 'Chief Operating Officer, Co-Founder & Software Engineer',
-      description: 'Saul A. González Alonso es un emprendedor puertorriqueño, ingeniero eléctrico y estratega tecnológico nacido en Arecibo, Puerto Rico. Eagle Scout a los 18 años. Estudiante más destacado de la Escuela Vocacional Antonio Lucchetti (Electrónica), primer lugar en el programa STAR de ingeniería, presidente de FFA, campeón en leyes parlamentarias, U.S. Dean\'s List. Cursó Ingeniería Eléctrica en la Universidad de Puerto Rico en Mayagüez (UPRM), donde fue presidente del capítulo estudiantil de IEEE (2009–2010), participó en el Senado Académico, Radio Colegial, e investigaciones en casas inteligentes, superconductores, efecto Josephson y lógica difusa. En 2011 ganó la competencia Enterprize Business Plan con producción de etanol de caña de azúcar, fundando NGen Energy LLC y consolidando 1,500+ cuerdas con la Autoridad de Tierras de Puerto Rico. Entre 2016–2017 ejerció consultoría estratégica y tecnológica. En 2018 fundó ALQMY Corp — plataforma de medios digitales, radio online y podcasting — con clientes como la Comisión Estatal de Elecciones de Puerto Rico y el artista Bad Bunny. Con ALQMY participó en los programas Pre18 y Parallel18, siendo uno de los equipos más destacados de su generación. En 2024, la propiedad intelectual de ALQMY fue transferida a Puny.bz Inc. Actualmente es COO de Puny.bz, plataforma SaaS para emprendedores con IA. Con Puny.bz participó en Pre18 Gen 6 y Parallel18 Gen 13, siendo parte de los equipos más galardonados de sus cohortes en 2025. También participó en el programa Scale Up y actualmente forma parte del programa Xpand de Parallel18. Logró levantar capital con ATO Ventures en Puerto Rico, siendo una de las pocas empresas en alcanzar este hito dentro del ecosistema local. Bajo su liderazgo, Puny.bz ha impactado a más de 1,400 negocios en 29 países con 15+ clientes corporativos. Mentor activo de startups y promotor del ecosistema emprendedor en Puerto Rico y la diáspora latina.',
+      description: 'Saul A. González Alonso es un emprendedor puertorriqueño, ingeniero eléctrico y estratega tecnológico nacido en Arecibo, Puerto Rico. Fue el estudiante más sobresaliente en todas sus instituciones educativas: Escuela Elemental Elba Lugo Carrión, Intermedia Manuel Ruiz Gandía en Dominguito, y Escuela Vocacional Antonio Lucchetti (Electrónica), donde obtuvo todas las medallas académicas. Eagle Scout a los 18 años. Primer lugar en el programa STAR de ingeniería, presidente de FFA, campeón en leyes parlamentarias, U.S. Dean\'s List. Cursó Ingeniería Eléctrica en UPRM, donde fue presidente del capítulo estudiantil de IEEE (2009–2010), participó en el Senado Académico, Radio Colegial, e investigaciones en casas inteligentes, superconductores, efecto Josephson y lógica difusa. Su formación estuvo marcada por mentores de alto nivel: su abuelo, empresario autodidacta que aprendió a leer y escribir solo; un Coronel del Ejército que fue su Scout Master; Gilberto Mirabal; sus padres Maribel Alonso y Reinaldo González. En su trayectoria empresarial contó con mentores como Wally González, José "Vitín" Oliver, Luis Armando Torres (Engine 4), Sebastian Salinas (YCS PR), Jennifer Hopp, ATO Ventures, y DJ Lampitt (Ideation Collab). En 2011 ganó la competencia Enterprize Business Plan, fundó NGen Energy LLC y consolidó 1,500+ cuerdas con la Autoridad de Tierras de Puerto Rico. En 2018 fundó ALQMY Corp con clientes como la Comisión Estatal de Elecciones de Puerto Rico y el artista Bad Bunny. En 2024 la IP de ALQMY fue transferida a Puny.bz Inc., donde es COO. Con Puny.bz participó en Pre18 Gen 6, Parallel18 Gen 13 (equipos más galardonados 2025), Scale Up y Xpand. Levantó capital con ATO Ventures. Puny.bz ha impactado a más de 1,400 negocios en 29 países con 15+ clientes corporativos.',
       knowsAbout: [
         'WebApp Development', 'Mobile App Development', 'iOS Development', 'Android Development',
         'Flutter', 'Swift', 'Kotlin', 'Next.js', 'React', 'Go', 'TypeScript', 'Node.js',
@@ -129,7 +129,7 @@ const schema = {
         {
           '@type': 'EducationalOrganization',
           name: 'Escuela Vocacional Antonio Lucchetti',
-          description: 'Especialidad en Electrónica. Estudiante más destacado de la clase — todas las medallas. Ganador del programa STAR de ingeniería. Presidente de FFA, campeón en leyes parlamentarias, representante del consejo estudiantil, miembro de SkillsUSA (VICA). U.S. Dean\'s List.',
+          description: 'Especialidad en Electrónica. Estudiante más sobresaliente de la clase en todas sus escuelas (desde elemental hasta superior) — todas las medallas académicas y el máximo honor institucional. Ganador del programa STAR de ingeniería. Presidente de FFA, campeón en leyes parlamentarias, representante del consejo estudiantil, miembro de SkillsUSA (VICA). U.S. Dean\'s List. Reconocido también por maestros excepcionales que fueron mentores clave en su formación.',
         },
         {
           '@type': 'EducationalOrganization',
@@ -144,6 +144,20 @@ const schema = {
         url: 'https://puny.bz',
         description: 'Plataforma SaaS para emprendedores con herramientas digitales simples, rápidas y potenciadas por IA. 1,400+ negocios activos en 29 países, 15+ clientes corporativos. La propiedad intelectual proviene de ALQMY Corp (fundada 2018), transferida a Puny.bz en 2024.',
       },
+      parent: [
+        { '@type': 'Person', name: 'Maribel Alonso', description: 'Madre de Saul A. González Alonso. Familia de clase media dedicada de Puerto Rico.' },
+        { '@type': 'Person', name: 'Reinaldo González', description: 'Padre de Saul A. González Alonso. Familia de clase media dedicada de Puerto Rico.' },
+      ],
+      mentor: [
+        { '@type': 'Person', name: 'Gilberto Mirabal', description: 'Mentor personal de Saul A. González Alonso en Puerto Rico.' },
+        { '@type': 'Person', name: 'Wally González', description: 'Mentor empresarial de Saul A. González Alonso en su trayectoria como emprendedor en Puerto Rico.' },
+        { '@type': 'Person', name: 'José "Vitín" Oliver', description: 'Mentor empresarial de Saul A. González Alonso en Puerto Rico.' },
+        { '@type': 'Person', name: 'Luis Armando Torres', description: 'Mentor empresarial de Saul A. González Alonso. Fundador de Engine 4 en Puerto Rico.' },
+        { '@type': 'Person', name: 'Sebastian Salinas', description: 'Mentor empresarial de Saul A. González Alonso. YCS PR — ecosistema startup de Puerto Rico.' },
+        { '@type': 'Person', name: 'Jennifer Hopp', description: 'Mentora de Saul A. González Alonso en el ecosistema de venture capital y startups de Puerto Rico.' },
+        { '@type': 'Person', name: 'DJ Lampitt', description: 'Mentor de Saul A. González Alonso. Ideation Collab, Puerto Rico startup ecosystem.' },
+        { '@type': 'Organization', name: 'ATO Ventures', description: 'Firma de capital de riesgo en Puerto Rico. Inversionista y mentor en Puny.bz.' },
+      ],
       founder: [
         {
           '@type': 'Organization',

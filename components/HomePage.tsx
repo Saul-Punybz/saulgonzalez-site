@@ -1106,9 +1106,8 @@ export default function HomePage() {
                 </a>
 
                 {/* Puny.bz */}
-                <a href="https://puny.bz" target="_blank" rel="noopener noreferrer"
+                <a href="https://puny.bz/saga" target="_blank" rel="noopener noreferrer"
                   className="group flex items-center gap-3 px-5 py-3.5 bg-[#55a6e6]/[0.08] hover:bg-[#55a6e6]/15 border border-[#55a6e6]/20 hover:border-[#55a6e6]/40 rounded-2xl transition-all hover:shadow-[0_4px_20px_rgba(85,166,230,0.15)]">
-                  {/* Puny.bz glyph — 3 colored blocks */}
                   <svg viewBox="0 0 58 62" className="h-5 w-auto flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="29.2" y="36.6" width="25.3" height="25.3" rx="6.7" fill="#4CD0B6"/>
                     <rect x="29.2" y="7.3" width="25.3" height="25.3" rx="6.7" fill="#FF6F61"/>
@@ -1116,19 +1115,6 @@ export default function HomePage() {
                   </svg>
                   <div>
                     <p className="text-[#55a6e6] font-bold text-sm leading-none">Puny.bz</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Co-fundador & COO</p>
-                  </div>
-                </a>
-
-                {/* Puny.bz Saga */}
-                <a href="https://puny.bz/saga" target="_blank" rel="noopener noreferrer"
-                  className="group flex items-center gap-3 px-5 py-3.5 bg-violet-500/[0.08] hover:bg-violet-500/15 border border-violet-500/20 hover:border-violet-500/40 rounded-2xl transition-all hover:shadow-[0_4px_20px_rgba(112,48,239,0.15)]">
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-violet-500 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2}>
-                    <rect x="3" y="4" width="18" height="18" rx="3"/>
-                    <path strokeLinecap="round" d="M8 10h8M8 14h5"/>
-                  </svg>
-                  <div>
-                    <p className="text-violet-400 font-bold text-sm leading-none">Agenda conmigo</p>
                     <p className="text-slate-500 text-xs mt-0.5">puny.bz/saga</p>
                   </div>
                 </a>

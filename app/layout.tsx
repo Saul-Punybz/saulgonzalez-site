@@ -278,6 +278,27 @@ const schema = {
           publisher: { '@type': 'Organization', name: 'Parallel18', url: 'https://parallel18.com' },
           description: 'Directorio oficial de startups de Parallel18 donde Puny.bz está listada como empresa del portafolio del programa.',
         },
+        {
+          '@type': 'WebPage',
+          name: 'ALQMY — F6S Company Profile',
+          url: 'https://www.f6s.com/company/alqmy',
+          publisher: { '@type': 'Organization', name: 'F6S', url: 'https://www.f6s.com' },
+          description: 'Perfil de ALQMY Corp en F6S, directorio global de startups y fundadores. ALQMY fue fundada por Saul A. González Alonso en 2018 como plataforma de medios digitales en Puerto Rico.',
+        },
+        {
+          '@type': 'Article',
+          headline: '3D Printing & Connectivity in Post-María Puerto Rico',
+          url: 'https://re3d.org/3d-printing-connectivity-in-post-maria-puerto-rico/',
+          publisher: { '@type': 'Organization', name: 'RE3D', url: 'https://re3d.org' },
+          description: 'Artículo de RE3D sobre conectividad y tecnología en Puerto Rico post-Huracán María, contexto en el que Saul González operó y contribuyó al ecosistema tecnológico de la isla.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'Puny.bz — Project Makers PR',
+          url: 'https://www.projectmakerspr.org/puny-bz',
+          publisher: { '@type': 'Organization', name: 'Project Makers PR', url: 'https://www.projectmakerspr.org' },
+          description: 'Perfil de Puny.bz en Project Makers PR, programa acelerador de emprendimiento. Saul A. González Alonso también ha sido mentor en el programa Accelerate de Project Makers PR.',
+        },
       ],
       award: [
         'Eagle Scout — Boy Scouts of America',

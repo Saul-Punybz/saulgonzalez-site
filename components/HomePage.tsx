@@ -1148,6 +1148,29 @@ export default function HomePage() {
         </section>
 
         {/* ── FOOTER ── */}
+        {/* ── Puny.bz Saga — Book a session ── */}
+        <section className="py-12 px-6 bg-white dark:bg-[#090820] border-t border-slate-100 dark:border-white/[0.06]">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 rounded-2xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/[0.08]">
+              <div className="flex items-center gap-4">
+                <img src="/puny-logo.svg" alt="Puny.bz" className="h-9 w-auto flex-shrink-0" onError={e => { (e.target as HTMLImageElement).src = '/puny-logo.png' }} />
+                <div>
+                  <p className="font-bold text-slate-900 dark:text-white text-sm">Reserva una sesión conmigo</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Coffee chat $6 · 1 hora $150 · 3 horas $200</p>
+                </div>
+              </div>
+              <a
+                href="https://puny.bz/saga"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gradient text-white font-bold px-6 py-3 rounded-xl text-sm whitespace-nowrap flex-shrink-0 transition-all hover:opacity-90"
+              >
+                Bukea conmigo →
+              </a>
+            </div>
+          </div>
+        </section>
+
         <footer className="py-10 px-6 border-t border-slate-100 dark:border-white/[0.06] bg-white dark:bg-[#090820]">
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 dark:text-slate-600 text-sm mb-6">

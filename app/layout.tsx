@@ -128,6 +128,8 @@ const schema = {
         'https://medium.com/@buscasaul',
         'https://medium.com/@buscasaul/saul-a-gonz%C3%A1lez-alonso-empresario-ingeniero-estratega-tecnol%C3%B3gico-mentor-de-negocios-1ee6e915ef5f',
         'https://puny.bz',
+        'https://www.youtube.com/@punybz',
+        'https://www.youtube.com/channel/UC5Z59quRfeeG1ttO460me7g',
       ],
       birthPlace: { '@type': 'Place', name: 'Arecibo, Puerto Rico, United States' },
       jobTitle: 'Chief Operating Officer, Co-Founder & Software Engineer',
@@ -291,6 +293,13 @@ const schema = {
           url: 'https://re3d.org/3d-printing-connectivity-in-post-maria-puerto-rico/',
           publisher: { '@type': 'Organization', name: 'RE3D', url: 'https://re3d.org' },
           description: 'Artículo de RE3D sobre conectividad y tecnología en Puerto Rico post-Huracán María, contexto en el que Saul González operó y contribuyó al ecosistema tecnológico de la isla.',
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Saúl González — Ponente: Fundador y COO de Puny.bz',
+          url: 'https://www.facebook.com/MetroWBC/photos/conoce-al-ponente-sa%C3%BAl-gonz%C3%A1lez-fundador-y-coo-de-punybz-sa%C3%BAl-compartir%C3%A1-su-expe/942231061800938/',
+          publisher: { '@type': 'NewsMediaOrganization', name: 'Metro WBC', url: 'https://www.facebook.com/MetroWBC' },
+          description: 'Metro WBC presentó a Saul González como ponente destacado en su evento, en su rol como Fundador y COO de Puny.bz, compartiendo su experiencia en emprendimiento digital y tecnología.',
         },
         {
           '@type': 'WebPage',

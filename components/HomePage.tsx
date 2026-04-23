@@ -125,7 +125,7 @@ const T = {
       {
         tag: 'Case Study · SaaS Platform · Co-fundador',
         company: 'Puny.bz',
-        logo: '/puny-logo.svg',
+        logo: '/puny-logo.png',
         industry: 'SaaS · No-Code · Puerto Rico',
         gradient: 'from-[#55a6e6]/20 to-[#4cd0b6]/10',
         accent: 'text-[#55a6e6] dark:text-[#69afc9]',
@@ -277,7 +277,7 @@ const T = {
       {
         tag: 'Case Study · SaaS Platform · Co-founder',
         company: 'Puny.bz',
-        logo: '/puny-logo.svg',
+        logo: '/puny-logo.png',
         industry: 'SaaS · No-Code · Puerto Rico',
         gradient: 'from-[#55a6e6]/20 to-[#4cd0b6]/10',
         accent: 'text-[#55a6e6] dark:text-[#69afc9]',
@@ -685,7 +685,7 @@ export default function HomePage() {
               <a href="https://puny.bz" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3 rounded-xl border border-[#55a6e6]/30 bg-[#55a6e6]/5 hover:bg-[#55a6e6]/10 transition-colors group flex-shrink-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/puny-logo.svg" alt="Puny.bz" className="h-7 w-auto" />
+                <img src="/puny-logo.png" alt="Puny.bz" className="h-7 w-auto" />
                 <span className="text-xs text-slate-500 dark:text-slate-400">{tx.puny_sub}</span>
               </a>
             </div>
@@ -1108,11 +1108,8 @@ export default function HomePage() {
                 {/* Puny.bz */}
                 <a href="https://puny.bz/saga" target="_blank" rel="noopener noreferrer"
                   className="group flex items-center gap-3 px-5 py-3.5 bg-[#55a6e6]/[0.08] hover:bg-[#55a6e6]/15 border border-[#55a6e6]/20 hover:border-[#55a6e6]/40 rounded-2xl transition-all hover:shadow-[0_4px_20px_rgba(85,166,230,0.15)]">
-                  <svg viewBox="0 0 58 62" className="h-5 w-auto flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="29.2" y="36.6" width="25.3" height="25.3" rx="6.7" fill="#4CD0B6"/>
-                    <rect x="29.2" y="7.3" width="25.3" height="25.3" rx="6.7" fill="#FF6F61"/>
-                    <rect x="0" y="7.3" width="25.3" height="54.6" rx="6.7" fill="#55A6E6"/>
-                  </svg>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/puny-logo.png" alt="Puny.bz" className="h-6 w-auto rounded-md bg-white p-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-[#55a6e6] font-bold text-sm leading-none">Puny.bz</p>
                     <p className="text-slate-500 text-xs mt-0.5">puny.bz/saga</p>

@@ -208,14 +208,14 @@ const schema = {
         {
           '@type': 'Organization',
           name: 'Parallel18 — Gen 13 (2025)',
-          url: 'https://parallel18.com',
+          url: 'https://revistaseguros.com/parallel18-supera-las-500-startups-apoyadas-y-anuncia-la-seleccion-de-la-generacion-13-del-programa-p18/',
           description: 'Programa de aceleración de startups de Puerto Rico. Puny.bz fue uno de los equipos más galardonados de la Generación 13 en 2025. También participó anteriormente con ALQMY.',
         },
         {
           '@type': 'Organization',
           name: 'Pre18 — Gen 6 (2025)',
-          url: 'https://parallel18.com',
-          description: 'Programa pre-aceleración de Parallel18. Puny.bz participó en la Generación 6.',
+          url: 'https://parallel18.com/pre18-gen-6/',
+          description: 'Programa pre-aceleración de Parallel18. Puny.bz participó en la Generación 6. Listado oficialmente en parallel18.com/pre18-gen-6/',
         },
         {
           '@type': 'Organization',
@@ -233,6 +233,50 @@ const schema = {
           '@type': 'Organization',
           name: 'ATO Ventures',
           description: 'Firma de capital de riesgo en Puerto Rico. Inversionista en Puny.bz — una de las pocas startups puertorriqueñas en levantar capital con ATO Ventures.',
+        },
+      ],
+      subjectOf: [
+        {
+          '@type': 'NewsArticle',
+          headline: 'Saúl González y Jonathan Díaz inventaron Puny.bz para facilitar la presencia en línea de pequeños negocios',
+          url: 'https://www.facebook.com/elnuevodia/posts/sa%C3%BAl-gonz%C3%A1lez-y-jonathan-d%C3%ADaz-inventaron-punybz-para-facilitar-la-presencia-en-l/1285146166992469/',
+          publisher: { '@type': 'NewsMediaOrganization', name: 'El Nuevo Día', url: 'https://elnuevodia.com' },
+          description: 'El principal periódico de Puerto Rico, El Nuevo Día, publicó sobre Saul González y Jonathan Díaz como cofundadores de Puny.bz y su misión de facilitar la presencia digital de pequeños negocios.',
+        },
+        {
+          '@type': 'Article',
+          headline: '42 Startups, 10 Countries — This is Parallel18\'s Gen 7',
+          url: 'https://parallel18.medium.com/42-startups-10-countries-this-is-parallel18s-gen-7-2baae42cffe0',
+          publisher: { '@type': 'Organization', name: 'Parallel18', url: 'https://parallel18.com' },
+          description: 'Publicación oficial de Parallel18 en Medium sobre la Generación 7 del programa acelerador de startups de Puerto Rico.',
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Parallel18 supera las 500 startups apoyadas y anuncia la selección de la Generación 13',
+          url: 'https://revistaseguros.com/parallel18-supera-las-500-startups-apoyadas-y-anuncia-la-seleccion-de-la-generacion-13-del-programa-p18/',
+          publisher: { '@type': 'NewsMediaOrganization', name: 'Revista Seguros', url: 'https://revistaseguros.com' },
+          description: 'Revista Seguros reporta la selección de Puny.bz en la Generación 13 de Parallel18, el programa acelerador de startups más reconocido de Puerto Rico.',
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Con más de 500 startups apoyadas, Parallel18 inicia su nueva generación de emprendedores',
+          url: 'https://soyemprendedor.co/con-mas-de-500-startups-apoyadas-parallel18-inicia-su-nueva-generacion-de-emprendedores/10741/',
+          publisher: { '@type': 'NewsMediaOrganization', name: 'SoyEmprendedor.co', url: 'https://soyemprendedor.co' },
+          description: 'Portal latinoamericano de emprendimiento reporta la participación de Puny.bz en Parallel18 Gen 13.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'Pre18 Gen 6 — Parallel18',
+          url: 'https://parallel18.com/pre18-gen-6/',
+          publisher: { '@type': 'Organization', name: 'Parallel18', url: 'https://parallel18.com' },
+          description: 'Página oficial de Parallel18 listando a Puny.bz como parte de la Generación 6 del programa Pre18.',
+        },
+        {
+          '@type': 'WebPage',
+          name: 'P18 Startups Directory — Parallel18',
+          url: 'https://parallel18.com/p18-startups/',
+          publisher: { '@type': 'Organization', name: 'Parallel18', url: 'https://parallel18.com' },
+          description: 'Directorio oficial de startups de Parallel18 donde Puny.bz está listada como empresa del portafolio del programa.',
         },
       ],
       award: [

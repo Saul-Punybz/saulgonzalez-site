@@ -75,8 +75,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://saulgonzalez.pro',
     languages: {
+      'x-default': 'https://saulgonzalez.pro',
       'es-PR': 'https://saulgonzalez.pro',
+      'es': 'https://saulgonzalez.pro',
       'en-US': 'https://saulgonzalez.pro',
+      'en': 'https://saulgonzalez.pro',
     },
   },
   openGraph: {
@@ -238,6 +241,13 @@ const schema = {
           name: 'ATO Ventures',
           description: 'Firma de capital de riesgo en Puerto Rico. Inversionista en Puny.bz — una de las pocas startups puertorriqueñas en levantar capital con ATO Ventures.',
         },
+        {
+          '@type': 'Event',
+          name: 'Startup Grind Global Conference — Puny.bz representa a Puerto Rico',
+          url: 'https://www.linkedin.com/posts/parallel18_parallel18-will-be-arriving-at-startup-grind-activity-7453427636460167169-7Jld',
+          organizer: { '@type': 'Organization', name: 'Startup Grind' },
+          description: 'Puny.bz, cofundada por Saul A. González Alonso, fue seleccionada por Parallel18 para representar a Puerto Rico en Startup Grind Global Conference, uno de los eventos de emprendimiento más importantes del mundo con presencia en más de 125 países.',
+        },
       ],
       subjectOf: [
         {
@@ -338,6 +348,15 @@ const schema = {
           publisher: { '@type': 'Organization', name: 'Project Makers PR', url: 'https://www.projectmakerspr.org' },
           description: 'Perfil de Puny.bz en Project Makers PR, programa acelerador de emprendimiento. Saul A. González Alonso también ha sido mentor en el programa Accelerate de Project Makers PR.',
         },
+        {
+          '@type': 'SocialMediaPosting',
+          name: 'Puny.bz representando a Puerto Rico en Startup Grind Global — Parallel18',
+          url: 'https://www.linkedin.com/posts/parallel18_parallel18-will-be-arriving-at-startup-grind-activity-7453427636460167169-7Jld',
+          publisher: { '@type': 'Organization', name: 'Parallel18', url: 'https://parallel18.com' },
+          description: 'Parallel18 y Puny.bz representarán a Puerto Rico en Startup Grind Global Conference. Publicación oficial de Parallel18 en LinkedIn anunciando la presencia de startups puertorriqueñas en uno de los eventos de emprendimiento más importantes del mundo.',
+          datePublished: '2025',
+          author: { '@type': 'Organization', name: 'Parallel18' },
+        },
       ],
       award: [
         'Eagle Scout — Boy Scouts of America',
@@ -350,6 +369,7 @@ const schema = {
         'Equipo Más Galardonado — Parallel18 Generación 13 (2025)',
         'Equipo Más Galardonado — Pre18 Generación 6 (2025)',
         'Capital levantado con ATO Ventures — Puerto Rico',
+        'Seleccionado por Parallel18 para representar Puerto Rico en Startup Grind Global Conference',
       ],
       address: {
         '@type': 'PostalAddress',
@@ -623,6 +643,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={inter.variable} suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -632,12 +656,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           {children}
         </Providers>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-K01SSTPWMF" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-97K7WKN9VT" strategy="afterInteractive" />
         <Script id="ga4" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-K01SSTPWMF');
+          gtag('config', 'G-97K7WKN9VT');
         `}</Script>
         <Script id="clarity" strategy="afterInteractive">{`
           (function(c,l,a,r,i,t,y){

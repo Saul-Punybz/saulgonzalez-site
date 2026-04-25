@@ -392,7 +392,7 @@ function Navbar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
                 className={`px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide transition-colors ${
                   lang === l
                     ? 'btn-gradient text-white'
-                    : 'bg-white dark:bg-white/10 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    : 'bg-white dark:bg-white/10 text-slate-600 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white'
                 }`}>
                 {l}
               </button>
@@ -417,6 +417,9 @@ function Navbar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
 
           {/* Hamburger — mobile */}
           <button onClick={() => setMobileOpen(o => !o)}
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
             className="md:hidden w-8 h-8 rounded-lg flex items-center justify-center bg-white dark:bg-white/10 border border-slate-200 dark:border-white/20 text-slate-600 dark:text-slate-300">
             {mobileOpen
               ? <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -428,7 +431,7 @@ function Navbar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-[#090820]/95 backdrop-blur-md border-b border-slate-200/70 dark:border-white/[0.07] px-6 pb-5 pt-2 flex flex-col gap-1">
+        <div id="mobile-menu" className="md:hidden bg-white/95 dark:bg-[#090820]/95 backdrop-blur-md border-b border-slate-200/70 dark:border-white/[0.07] px-6 pb-5 pt-2 flex flex-col gap-1">
           {navLinks.map(l => (
             <a key={l.href} href={l.href} onClick={() => setMobileOpen(false)}
               className="text-sm text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 font-medium py-2.5 border-b border-slate-100 dark:border-white/[0.05] last:border-0 transition-colors">
@@ -583,7 +586,7 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <p className="text-slate-400 dark:text-slate-600 text-sm">{tx.hero_disclaimer}</p>
+                <p className="text-slate-500 dark:text-slate-500 text-sm">{tx.hero_disclaimer}</p>
 
                 {/* Urgency + mini testimonial */}
                 <div className="flex flex-col sm:flex-row items-center lg:items-start gap-3 mt-6">
@@ -598,7 +601,7 @@ export default function HomePage() {
                   <img src="/gilberto.jpg" alt="Gilberto" className="w-8 h-8 rounded-full object-cover flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs text-slate-600 dark:text-slate-300 leading-snug italic">&ldquo;{lang === 'es' ? 'Al otro día ya la gente usaba el sistema. Fue un éxito total.' : 'The next day people were already using it. Total success.'}&rdquo;</p>
-                    <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-1 font-medium">Gilberto C. · Dnuevo Coffee</p>
+                    <p className="text-[11px] text-slate-600 dark:text-slate-300 mt-1 font-medium">Gilberto C. · Dnuevo Coffee</p>
                   </div>
                 </div>
 
@@ -681,7 +684,7 @@ export default function HomePage() {
         <section className="py-20 border-y border-slate-100 dark:border-white/[0.06] bg-slate-50/80 dark:bg-surface/50 overflow-hidden">
           <div className="max-w-5xl mx-auto px-6 mb-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-              <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 dark:text-slate-600">{tx.clients_heading}</p>
+              <p className="text-xs font-semibold tracking-widest uppercase text-slate-500 dark:text-slate-500">{tx.clients_heading}</p>
               <a href="https://puny.bz" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3 rounded-xl border border-[#55a6e6]/30 bg-[#55a6e6]/5 hover:bg-[#55a6e6]/10 transition-colors group flex-shrink-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -840,7 +843,7 @@ export default function HomePage() {
                   <span className="text-2xl">🇵🇷</span>
                   <div>
                     <p className="text-xs font-bold text-slate-900 dark:text-white">Puny.bz</p>
-                    <p className="text-xs text-slate-400">{lang === 'es' ? 'Co-fundador' : 'Co-founder'}</p>
+                    <p className="text-xs text-slate-500">{lang === 'es' ? 'Co-fundador' : 'Co-founder'}</p>
                   </div>
                 </div>
 
@@ -1052,7 +1055,7 @@ export default function HomePage() {
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">{tx.contact_office_label}</p>
                   <p className="text-white font-bold text-sm leading-snug">{tx.contact_office_name}</p>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">{tx.contact_office_addr}<br />{tx.contact_office_city}</p>
+                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">{tx.contact_office_addr}<br />{tx.contact_office_city}</p>
                   <p className="text-xs text-slate-600 mt-1">{tx.contact_office_tag}</p>
                 </div>
               </div>
@@ -1173,6 +1176,12 @@ export default function HomePage() {
               <span>·</span>
               <span>Bayamón, Puerto Rico 🇵🇷</span>
             </div>
+            <p className="mt-4 text-center text-xs text-slate-500 dark:text-slate-500 leading-relaxed max-w-2xl mx-auto">
+              {lang === 'es'
+                ? <>Este sitio utiliza Microsoft Clarity y Google Analytics para entender cómo se usa. Al navegar, aceptas que nosotros y Microsoft podemos recopilar y usar estos datos. <a href="/privacidad" className="underline hover:text-violet-500 transition-colors">Política de Privacidad</a>.</>
+                : <>This site uses Microsoft Clarity and Google Analytics to understand how it's used. By using our site, you agree that we and Microsoft may collect and use this data. <a href="/privacidad" className="underline hover:text-violet-500 transition-colors">Privacy Policy</a>.</>
+              }
+            </p>
           </div>
         </footer>
 

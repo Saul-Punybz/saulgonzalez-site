@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Sora } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Providers from '@/components/Providers'
 import Script from 'next/script'
 
-const sora = Sora({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-sora',
+  variable: '--font-inter',
   display: 'swap',
 })
 
@@ -641,7 +641,7 @@ const schema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={sora.variable} suppressHydrationWarning>
+    <html lang="es" className={inter.variable} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

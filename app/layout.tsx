@@ -242,11 +242,10 @@ const schema = {
           description: 'Firma de capital de riesgo en Puerto Rico. Inversionista en Puny.bz — una de las pocas startups puertorriqueñas en levantar capital con ATO Ventures.',
         },
         {
-          '@type': 'Event',
-          name: 'Startup Grind Global Conference — Puny.bz representa a Puerto Rico',
-          url: 'https://www.linkedin.com/posts/parallel18_parallel18-will-be-arriving-at-startup-grind-activity-7453427636460167169-7Jld',
-          organizer: { '@type': 'Organization', name: 'Startup Grind' },
-          description: 'Puny.bz, cofundada por Saul A. González Alonso, fue seleccionada por Parallel18 para representar a Puerto Rico en Startup Grind Global Conference, uno de los eventos de emprendimiento más importantes del mundo con presencia en más de 125 países.',
+          '@type': 'Organization',
+          name: 'Startup Grind Global Conference',
+          url: 'https://www.startupgrind.com',
+          description: 'Puny.bz fue seleccionada por Parallel18 para representar a Puerto Rico en Startup Grind Global Conference, uno de los eventos de emprendimiento más importantes del mundo con presencia en más de 125 países.',
         },
       ],
       subjectOf: [

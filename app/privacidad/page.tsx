@@ -25,7 +25,7 @@ const sections = [
   },
   {
     title: '5. Con quién compartimos tus datos',
-    content: `Para operar los servicios, podemos usar los siguientes proveedores que actúan como encargados del tratamiento:\n\n• Google Workspace (correo electrónico, videoconferencias, documentos)\n• WhatsApp Business (comunicación directa)\n• Stripe o PayPal (procesamiento de pagos — solo acceden a los datos de facturación necesarios)\n• Vercel (hosting de este sitio web — no tiene acceso a datos personales de clientes)\n\nTodos estos proveedores cumplen con estándares de privacidad reconocidos (GDPR, CCPA o equivalentes).`,
+    content: `Para operar los servicios, podemos usar los siguientes proveedores que actúan como encargados del tratamiento:\n\n• Google Workspace (correo electrónico, videoconferencias, documentos)\n• WhatsApp Business (comunicación directa)\n• Stripe o PayPal (procesamiento de pagos — solo acceden a los datos de facturación necesarios)\n• Vercel (hosting de este sitio web — no tiene acceso a datos personales de clientes)\n• Google Analytics 4 (análisis de tráfico web — ver sección 8)\n• Microsoft Clarity (análisis de comportamiento web — ver sección 8)\n\nTodos estos proveedores cumplen con estándares de privacidad reconocidos (GDPR, CCPA o equivalentes).`,
   },
   {
     title: '6. Por cuánto tiempo guardamos tus datos',
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     title: '8. Cookies y tecnologías de rastreo',
-    content: `Este sitio web utiliza únicamente cookies técnicas necesarias para el funcionamiento básico (como la preferencia de idioma y tema). No utilizamos cookies de rastreo publicitario, pixels de Facebook, ni herramientas de análisis de comportamiento de terceros que identifiquen usuarios individuales.\n\nSi en el futuro se añade alguna herramienta de análisis, esta Política se actualizará y se informará al usuario.`,
+    content: `Este sitio web utiliza cookies técnicas para el funcionamiento básico (como la preferencia de tema) y herramientas de análisis de terceros para mejorar la experiencia y el rendimiento:\n\n• Google Analytics 4 — Utilizamos Google Analytics para entender el tráfico, páginas visitadas y fuentes de acceso de manera agregada y anónima. Google puede recopilar datos según su política de privacidad (policies.google.com/privacy).\n\n• Microsoft Clarity — Utilizamos Microsoft Clarity para capturar cómo interactúas con este sitio web mediante métricas de comportamiento, mapas de calor (heatmaps) y repetición de sesiones (session replay), con el fin de mejorar nuestros servicios. Al usar este sitio, aceptas que tanto nosotros como Microsoft podemos recopilar y usar estos datos. Microsoft Clarity usa cookies propias y de terceros. Para más información sobre cómo Microsoft recopila y usa tus datos, consulta la Declaración de Privacidad de Microsoft en microsoft.com/privacy/privacystatement.\n\nNo utilizamos cookies de rastreo publicitario, pixels de Facebook ni redes de anuncios de terceros.`,
   },
   {
     title: '9. Seguridad de los datos',

@@ -1,8 +1,6 @@
 import { Resend } from 'resend'
 import { google } from 'googleapis'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export type LeadData = {
   email: string
   tool: string
@@ -54,6 +52,7 @@ async function notifyChat(timestamp: string, email: string, tool: string, url: s
 }
 
 async function sendEmail(email: string, tool: string, url: string, score?: number, summary?: string) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
   const scoreColor = !score ? '#888' : score >= 80 ? '#22c55e' : score >= 60 ? '#f59e0b' : '#ef4444'
   const scoreGrade = !score ? '' : score >= 90 ? 'A' : score >= 80 ? 'B' : score >= 70 ? 'C' : score >= 60 ? 'D' : 'F'
 

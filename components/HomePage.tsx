@@ -19,7 +19,7 @@ const T = {
     hero_disclaimer: 'Sin compromiso · Si no soy el indicado, te conecto con quien puede ayudarte',
     hero_bottom: 'Co-fundador de Puny.bz · PR · US · Chile · Argentina · 29 países',
     clients_heading: 'Han confiado en nosotros',
-    puny_sub: 'Co-fundador · 1,303 negocios · 29 países',
+    puny_sub: 'Co-fundador · 1,303 negocios activos · 19 países',
     results: [
       { n: '400',    label: 'Leads en 1 día',        sub: 'Dnuevo Coffee' },
       { n: '40/sem', label: 'Leads de alto valor',   sub: 'Reciclaje del Norte' },

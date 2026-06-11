@@ -5,6 +5,12 @@ import ThemeToggle from '@/components/ThemeToggle'
 export const metadata: Metadata = {
   title: 'Herramientas Digitales Gratis — SEO, Meta Tags, OG Preview',
   description: 'Analiza tu presencia digital gratis. Meta Tags Checker, Open Graph Preview, Technology Detector, Metadata Scanner y más. Herramientas para negocios y creadores en Puerto Rico y LatAm.',
+  alternates: { canonical: 'https://saulgonzalez.pro/tools' },
+  openGraph: {
+    title: 'Herramientas Digitales Gratis — SEO, Meta Tags, OG Preview',
+    description: 'Analiza tu presencia digital gratis: SEO, meta tags, Open Graph, Core Web Vitals y más.',
+    url: 'https://saulgonzalez.pro/tools',
+  },
 }
 
 const tools = [

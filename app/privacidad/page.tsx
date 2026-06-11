@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad — Saul A. González',
+  title: 'Política de Privacidad',
   description: 'Política de privacidad y manejo de datos de los servicios de consultoría digital de Saul A. González.',
+  alternates: { canonical: 'https://saulgonzalez.pro/privacidad' },
 }
 
 const sections = [

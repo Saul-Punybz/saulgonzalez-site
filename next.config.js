@@ -25,6 +25,14 @@ const nextConfig = {
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }]
   },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'saulgonzalez.pro' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: '**.unsplash.com' },
+      { protocol: 'https', hostname: 'img.youtube.com' },
+    ],
+  },
 }
 
 module.exports = nextConfig

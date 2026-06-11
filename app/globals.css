@@ -130,3 +130,41 @@ html:not(.dark) .border-slate-200 {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-8px); }
 }
+
+/* ── Blog prose (migrated from blogs.saulgonzalez.pro) ── */
+.prose { color: inherit; }
+.prose h2 { font-size: 1.5rem; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1rem; }
+.prose h3 { font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; }
+.prose p  { margin-bottom: 1.4rem; line-height: 1.8; }
+.prose ul { margin-bottom: 1.4rem; padding-left: 1.5rem; list-style: disc; }
+.prose ol { margin-bottom: 1.4rem; padding-left: 1.5rem; list-style: decimal; }
+.prose li { margin-bottom: 0.4rem; line-height: 1.7; }
+.prose a  { color: #7c3aed; text-decoration: underline; text-underline-offset: 3px; }
+.dark .prose a { color: #a78bfa; }
+.prose strong { font-weight: 700; }
+.prose em { font-style: italic; }
+.prose hr { margin: 2.5rem 0; border-color: rgba(255,255,255,0.08); }
+html:not(.dark) .prose hr { border-color: #e2e8f0; }
+.prose blockquote {
+  border-left: 3px solid #7030ef;
+  padding-left: 1.2rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  opacity: 0.8;
+}
+.prose code {
+  background: rgba(112,48,239,0.12);
+  color: #a78bfa;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-family: 'Fira Code', monospace;
+}
+.prose pre {
+  background: #0f0f24;
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(255,255,255,0.07);
+}

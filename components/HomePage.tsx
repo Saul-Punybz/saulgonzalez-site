@@ -350,12 +350,14 @@ function Navbar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
         { label: 'Servicios', href: '#servicios' },
         { label: 'Proyectos', href: '#proyectos' },
         { label: 'Proceso',   href: '#proceso' },
+        { label: 'Blog',      href: '/blog' },
         { label: 'Contacto',  href: '#contacto' },
       ]
     : [
         { label: 'Services', href: '#servicios' },
         { label: 'Projects', href: '#proyectos' },
         { label: 'Process',  href: '#proceso' },
+        { label: 'Blog',     href: '/blog' },
         { label: 'Contact',  href: '#contacto' },
       ]
 

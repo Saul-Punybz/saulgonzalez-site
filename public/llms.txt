@@ -52,13 +52,16 @@ Emprendedor y ejecutivo de operaciones con experiencia en SaaS, nearshore softwa
   - https://saulgonzalez.pro/tools/tech-detector — Technology Detector
   - https://saulgonzalez.pro/tools/domain-check — Domain & Health Check
 
-## Blog (blogs.saulgonzalez.pro)
+## Blog (saulgonzalez.pro/blog)
 
-- https://blogs.saulgonzalez.pro/puerto-rico-tiene-capital-pero-no-es-para-ti — Puerto Rico tiene capital. Pero no es para ti. (análisis del ecosistema de venture capital y Act 60 en Puerto Rico)
-- https://blogs.saulgonzalez.pro/el-problema-que-resuelve-punybz — El problema que resuelve Puny.bz: infraestructura primero, IA después
-- https://blogs.saulgonzalez.pro/de-arecibo-a-parallel18 — De Arecibo a Parallel18: historia personal
-- https://blogs.saulgonzalez.pro/construyendo-sobre-el-hype — Construyendo sobre el hype: IA sin estructura
-- https://blogs.saulgonzalez.pro/lo-que-las-pequenas-empresas-necesitan — Lo que las pequeñas empresas necesitan
+- https://saulgonzalez.pro/blog/nearshore-puerto-rico-legal-difference — Nearshore Development from Puerto Rico: The Legal Difference Nobody Explains (English)
+- https://saulgonzalez.pro/blog/act-60-businesses-tech-stack — What Act 60 Service Businesses Get Wrong About Their Tech Stack (English)
+- https://saulgonzalez.pro/blog/nearshore-puerto-rico-vs-latam-vs-offshore — Puerto Rico vs. LATAM vs. Offshore: The Real Math for US Companies (English)
+- https://saulgonzalez.pro/blog/puerto-rico-tiene-capital-pero-no-es-para-ti — Puerto Rico tiene capital. Pero no es para ti. (análisis del ecosistema de venture capital y Act 60 en Puerto Rico)
+- https://saulgonzalez.pro/blog/el-problema-que-resuelve-punybz — El problema que resuelve Puny.bz: infraestructura primero, IA después
+- https://saulgonzalez.pro/blog/de-arecibo-a-parallel18 — De Arecibo a Parallel18: historia personal
+- https://saulgonzalez.pro/blog/construyendo-sobre-el-hype — Construyendo sobre el hype: IA sin estructura
+- https://saulgonzalez.pro/blog/lo-que-las-pequenas-empresas-necesitan — Lo que las pequeñas empresas necesitan
 
 Temas: building in public desde Puerto Rico, vibe coding y desarrollo con IA, herramientas para founders latinoamericanos, historia de Puny.bz y Parallel18.
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'Saul A. González — Consultor Digital & Vibe Coder | Puerto Rico',
     template: '%s | Saul A. González',
   },
-  description: 'Consultor digital y vibe coder en Puerto Rico. COO de Puny.bz (1,303 negocios, 19 países). WebApps, apps iOS/Android e IA. Nearshore US: Eastern Time, sin visa, USD. Consulta gratis.',
+  description: 'Consultor digital y vibe coder en Puerto Rico. COO de Puny.bz (1,303 negocios, 19 países). WebApps, apps iOS/Android e IA. Nearshore US. Consulta gratis.',
   keywords: [
     // ── Identidad ──────────────────────────────
     'Saul González Alonso',

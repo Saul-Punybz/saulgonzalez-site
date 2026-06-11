@@ -44,19 +44,29 @@ export function getMeta(html: string, attr: string, val: string): string | null 
   ]
   for (const p of patterns) {
     const m = html.match(p)
-    if (m?.[1] !== undefined) return m[1]
+    if (m?.[1] !== undefined) return decodeEntities(m[1])
   }
   return null
 }
 
+export function decodeEntities(s: string): string {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;|&#39;|&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+}
+
 export function getTitle(html: string): string | null {
   const m = html.match(/<title[^>]*>([^<]+)<\/title>/i)
-  return m?.[1]?.trim() ?? null
+  return m?.[1] ? decodeEntities(m[1].trim()) : null
 }
 
 export function getAllMeta(html: string): Array<Record<string, string>> {
   const results: Array<Record<string, string>> = []
-  const tagRegex = /<meta([^>]*?)(?:\s*\/)?>(?!<)/gi
+  const tagRegex = /<meta([^>]*?)\/?>/gi
   let match
   while ((match = tagRegex.exec(html)) !== null) {
     const attrs = match[1]
@@ -73,7 +83,7 @@ export function getAllMeta(html: string): Array<Record<string, string>> {
 
 export function getLinkTags(html: string): Array<Record<string, string>> {
   const results: Array<Record<string, string>> = []
-  const tagRegex = /<link([^>]*?)(?:\s*\/)?>(?!<)/gi
+  const tagRegex = /<link([^>]*?)\/?>/gi
   let match
   while ((match = tagRegex.exec(html)) !== null) {
     const attrs = match[1]

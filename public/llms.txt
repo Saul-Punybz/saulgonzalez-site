@@ -40,7 +40,8 @@ Emprendedor y ejecutivo de operaciones con experiencia en SaaS, nearshore softwa
 
 ## Páginas clave de este sitio
 
-- https://saulgonzalez.pro/ — Portfolio personal, bio, servicios y FAQ
+- https://saulgonzalez.pro/ — Portfolio personal, bio, servicios y FAQ (español)
+- https://saulgonzalez.pro/en — English version: nearshore software development from Puerto Rico, Act 60-ready (US territory, Eastern Time, no visa, US law)
 - https://saulgonzalez.pro/tools — 8 herramientas digitales gratuitas (SEO y análisis web)
   - https://saulgonzalez.pro/tools/meta-tags — Meta Tags Checker
   - https://saulgonzalez.pro/tools/og-preview — Open Graph Preview (Facebook, LinkedIn, X, WhatsApp)

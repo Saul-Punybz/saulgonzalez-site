@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://saulgonzalez.pro/en',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: 'https://saulgonzalez.pro/tools',
       lastModified: new Date(),
       changeFrequency: 'monthly',

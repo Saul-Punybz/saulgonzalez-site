@@ -388,7 +388,7 @@ function Navbar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
           {/* Lang toggle */}
           <div className="flex rounded-lg overflow-hidden border border-slate-200 dark:border-white/20 shadow-sm">
             {(['es','en'] as Lang[]).map(l => (
-              <button key={l} onClick={() => setLang(l)}
+              <button key={l} onClick={() => { setLang(l); window.history.replaceState(null, '', l === 'en' ? '/en' : '/') }}
                 className={`px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide transition-colors ${
                   lang === l
                     ? 'btn-gradient text-white'
@@ -530,15 +530,19 @@ function TechTag({ label }: { label: string }) {
 }
 
 /* ─── PAGE ───────────────────────────────────────── */
-export default function HomePage() {
-  const [lang, setLang] = useState<Lang>('es')
+export default function HomePage({ initialLang }: { initialLang?: Lang }) {
+  const [lang, setLang] = useState<Lang>(initialLang ?? 'es')
 
   useEffect(() => {
+    if (initialLang) {
+      document.documentElement.lang = initialLang
+      return
+    }
     const saved = localStorage.getItem('lang') as Lang | null
     if (saved) { setLang(saved); return }
     const browser = navigator.language?.toLowerCase() || ''
     setLang(browser.startsWith('en') ? 'en' : 'es')
-  }, [])
+  }, [initialLang])
 
   useEffect(() => { localStorage.setItem('lang', lang) }, [lang])
 

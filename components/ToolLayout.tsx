@@ -45,13 +45,13 @@ export default function ToolLayout({ title, description, icon, children }: Props
       <footer className="border-t border-slate-100 dark:border-white/5 mt-16 py-8">
         <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            ¿Necesitas ayuda con tu presencia digital?
+            ¿Levantando capital? Te oriento 1:1 — gratis.
           </p>
           <Link
-            href="https://saulgonzalez.pro/#quiz"
+            href="/#contacto"
             className="btn-gradient text-white font-semibold text-sm px-5 py-2 rounded-lg"
           >
-            Consulta gratis 30 min →
+            Agenda consulta gratis →
           </Link>
         </div>
       </footer>

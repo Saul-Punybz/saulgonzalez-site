@@ -89,7 +89,7 @@ export default function HomeEn() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaEn) }}
       />
-      <HomePage initialLang="en" />
+      <HomePage />
     </>
   )
 }

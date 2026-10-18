@@ -190,7 +190,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <p className="text-white font-black text-xl mb-2">¿Estás construyendo algo?</p>
             <p className="text-slate-300 text-sm mb-5">WebApps, Apps Móviles, integración de IA. Consulta gratis de 30 minutos, sin compromiso.</p>
             <div className="flex flex-wrap gap-3">
-              <a href="/#quiz"
+              <a href="/#contacto"
                 className="inline-block btn-gradient btn-glow text-white font-bold px-7 py-3 rounded-xl text-sm">
                 Consulta gratis →
               </a>

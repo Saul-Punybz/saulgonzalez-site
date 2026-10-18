@@ -89,7 +89,7 @@ export default function LeadCapture({ tool, url, score, summary, issues = [] }: 
             ¿No lo ves? Revisa spam. Llega en menos de 5 minutos.
           </p>
           <a
-            href="https://saulgonzalez.pro/#quiz"
+            href="/#contacto"
             className={`inline-block mt-4 bg-gradient-to-r ${urgency.bg} text-white font-bold px-6 py-2.5 rounded-xl text-sm`}
           >
             Hablar con Saul directamente →

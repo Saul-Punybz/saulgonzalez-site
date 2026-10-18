@@ -184,7 +184,7 @@ export default function Home() {
             <p className="text-slate-300 max-w-md mx-auto mb-8 leading-relaxed">
               WebApps, Apps Móviles, integración de IA. Consulta de 30 minutos, sin compromiso.
             </p>
-            <a href="/#quiz"
+            <a href="/#contacto"
               className="inline-block btn-gradient btn-glow text-white font-bold px-10 py-4 rounded-2xl text-base">
               Agenda tu consulta gratis →
             </a>

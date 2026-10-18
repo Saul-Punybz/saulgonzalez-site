@@ -3,107 +3,87 @@ import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
 
 export const metadata: Metadata = {
-  title: 'Herramientas Digitales Gratis — SEO, Meta Tags, OG Preview',
-  description: 'Analiza tu presencia digital gratis. Meta Tags Checker, Open Graph Preview, Technology Detector, Metadata Scanner y más. Herramientas para negocios y creadores en Puerto Rico y LatAm.',
+  title: 'Herramientas de Capital Gratis — SAFE, Dilución, Dataroom, Term Sheet',
+  description: 'Herramientas gratis en español para levantar capital: generador de SAFE y nota convertible, calculadora de dilución y de SAFE, checklist de dataroom, simulador de cap table, runway y detector de cláusulas predatorias.',
   alternates: { canonical: 'https://saulgonzalez.pro/tools' },
   openGraph: {
-    title: 'Herramientas Digitales Gratis — SEO, Meta Tags, OG Preview',
-    description: 'Analiza tu presencia digital gratis: SEO, meta tags, Open Graph, Core Web Vitals y más.',
+    title: 'Herramientas de Capital Gratis — SAFE, Dilución, Dataroom',
+    description: 'Genera documentos, calcula tu dilución, arma tu dataroom y detecta cláusulas predatorias. Gratis, en español.',
     url: 'https://saulgonzalez.pro/tools',
   },
 }
 
 const tools = [
   {
-    href: '/tools/meta-tags',
-    icon: '🏷️',
-    title: 'Meta Tags Checker',
-    desc: 'Verifica title, description, viewport, canonical y todos los meta tags de cualquier URL.',
-    badge: 'SEO',
+    href: '/tools/generador-safe',
+    icon: '📄',
+    title: 'Generador de SAFE',
+    desc: 'Formulario → tu SAFE completo en Word y PDF, sobre la plantilla post-money de Y Combinator. Con cláusulas opcionales y alertas.',
+    badge: 'Gratis',
     available: true,
   },
   {
-    href: '/tools/og-preview',
-    icon: '🔗',
-    title: 'Open Graph Preview',
-    desc: 'Visualiza cómo se ve tu link cuando lo compartes en Facebook, LinkedIn, Twitter y WhatsApp.',
-    badge: 'Redes',
+    href: '/tools/generador-nota-convertible',
+    icon: '📝',
+    title: 'Generador de nota convertible',
+    desc: 'Tu convertible note lista para firmar: interés, vencimiento, valuation cap y discount. Descarga en Word y PDF.',
+    badge: 'Gratis',
     available: true,
   },
   {
-    href: '/tools/tech-detector',
-    icon: '🔬',
-    title: 'Technology Detector',
-    desc: 'Descubre el stack tecnológico de cualquier sitio: frameworks, CMS, analytics, hosting.',
-    badge: 'Dev',
+    href: '/tools/checklist-dataroom',
+    icon: '🗂️',
+    title: 'Checklist de dataroom',
+    desc: 'Todo lo que un inversor pide antes de firmar. Marca los ítems, mide tu progreso y exporta el resumen.',
+    badge: 'Gratis',
     available: true,
   },
   {
-    href: '/tools/metadata-scan',
-    icon: '🔍',
-    title: 'Metadata Deep Scan',
-    desc: 'Escaneo completo del <head>: todos los meta tags, JSON-LD, link tags y datos estructurados.',
-    badge: 'SEO',
+    href: '/tools/calculadora-dilucion',
+    icon: '📉',
+    title: 'Calculadora de dilución',
+    desc: 'Monto + valuación → cuánto equity entregas, cómo pesa el option pool y tu cap table después de la ronda.',
+    badge: 'Calculadora',
     available: true,
   },
   {
-    href: '/tools/core-web-vitals',
+    href: '/tools/calculadora-safe',
+    icon: '🧮',
+    title: 'Calculadora de SAFE',
+    desc: 'Cap + discount → precio de conversión y el ownership real que entregas cuando el SAFE convierte en la ronda priced.',
+    badge: 'Calculadora',
+    available: true,
+  },
+  {
+    href: '/tools/simulador-cap-table',
     icon: '📊',
-    title: 'Core Web Vitals',
-    desc: 'Velocidad de carga, LCP, CLS, TBT y score de PageSpeed para móvil y desktop.',
-    badge: 'Velocidad',
+    title: 'Simulador de cap table',
+    desc: 'Añade tus rondas y mira cómo se diluye tu ownership de founder ronda a ronda hasta la Serie A.',
+    badge: 'Calculadora',
     available: true,
   },
   {
-    href: '/tools/keywords',
-    icon: '🔑',
-    title: 'Keywords Extractor',
-    desc: 'Extrae las palabras clave más relevantes y verifica su presencia en title, H1 y descripción.',
-    badge: 'SEO',
+    href: '/tools/calculadora-runway',
+    icon: '🛫',
+    title: 'Calculadora de runway',
+    desc: 'Caja ÷ burn → cuántos meses de pista te quedan, cuándo se acaba la caja y cuándo empezar a levantar.',
+    badge: 'Calculadora',
     available: true,
   },
   {
-    href: '/tools/seo-analyzer',
-    icon: '📐',
-    title: 'SEO Analyzer',
-    desc: 'Análisis SEO on-page completo: headings, imágenes, links internos/externos y más.',
-    badge: 'SEO',
+    href: '/tools/red-flags-term-sheet',
+    icon: '🚩',
+    title: 'Red-flags de term sheet',
+    desc: 'Marca las cláusulas de tu term sheet y detecta las predatorias — con su gravedad y cómo negociarlas.',
+    badge: 'Análisis',
     available: true,
-  },
-  {
-    href: '/tools/domain-check',
-    icon: '⚙️',
-    title: 'Domain & Health Check',
-    desc: 'DNS, SSL, seguridad, tiempo de respuesta y health check completo de cualquier dominio.',
-    badge: 'Tech',
-    available: true,
-  },
-  {
-    href: '#',
-    icon: '🗺️',
-    title: 'Google Business Profile',
-    desc: 'Analiza la presencia de un negocio en Google Maps: reseñas, fotos, info y score.',
-    badge: 'Local',
-    available: false,
-  },
-  {
-    href: '#',
-    icon: '🌐',
-    title: 'PresenciaDigital',
-    desc: 'Score completo de presencia digital: Google, sitio web, redes sociales y reputación.',
-    badge: 'Completo',
-    available: false,
   },
 ]
 
 const badgeColors: Record<string, string> = {
-  SEO: 'bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400',
-  Redes: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
-  Dev: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
-  Velocidad: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
-  Local: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400',
-  Completo: 'bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-900/30 dark:text-fuchsia-400',
-  Tech: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400',
+  Gratis: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
+  Calculadora: 'bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400',
+  Análisis: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
 }
 
 export default function ToolsHub() {
@@ -123,14 +103,14 @@ export default function ToolsHub() {
       <section className="hero-grid border-b border-slate-100 dark:border-white/5">
         <div className="max-w-5xl mx-auto px-4 py-16 text-center">
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-violet-600 dark:text-violet-400 mb-4">
-            Herramientas Gratis
+            Herramientas de Capital
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4">
-            Analiza tu presencia<br className="hidden sm:block" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-fuchsia-600"> digital en segundos</span>
+            Levanta capital con las herramientas<br className="hidden sm:block" />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-fuchsia-600"> que nadie tiene en español</span>
           </h1>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl mx-auto">
-            10 herramientas para SEO, redes sociales y análisis técnico. Gratis, sin registro, para cualquier URL.
+            Genera documentos, calcula tu dilución, arma tu dataroom y detecta cláusulas predatorias. Gratis, sin jerga, en español.
           </p>
         </div>
       </section>
@@ -163,14 +143,7 @@ export default function ToolsHub() {
                 <div className="h-full rounded-xl border border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/[0.01] p-5 opacity-60">
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-2xl grayscale">{tool.icon}</span>
-                    <div className="flex items-center gap-2">
-                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${badgeColors[tool.badge] ?? ''}`}>
-                        {tool.badge}
-                      </span>
-                      <span className="text-xs bg-slate-100 dark:bg-white/5 text-slate-400 px-2 py-0.5 rounded-full">
-                        Pronto
-                      </span>
-                    </div>
+                    <span className="text-xs bg-slate-100 dark:bg-white/5 text-slate-400 px-2 py-0.5 rounded-full">Pronto</span>
                   </div>
                   <h2 className="font-semibold text-slate-500 dark:text-slate-500 mb-1">{tool.title}</h2>
                   <p className="text-sm text-slate-400 dark:text-slate-600">{tool.desc}</p>
@@ -185,16 +158,16 @@ export default function ToolsHub() {
       <section className="border-t border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/[0.02]">
         <div className="max-w-5xl mx-auto px-4 py-12 text-center">
           <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
-            ¿Quieres un análisis completo de tu negocio digital?
+            ¿Necesitas más que herramientas para tu ronda?
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mb-6">
-            Consulta gratuita de 30 minutos. Te digo exactamente qué está fallando y cómo solucionarlo.
+            Orientación 1:1 de fundraising con alguien que ya levantó su ronda: estrategia, vehículo y dataroom.
           </p>
           <Link
-            href="https://saulgonzalez.pro/#quiz"
+            href="/#contacto"
             className="btn-gradient btn-glow inline-block text-white font-semibold px-8 py-3 rounded-xl text-sm"
           >
-            Agenda tu consulta gratis →
+            Ver asesoría →
           </Link>
         </div>
       </section>

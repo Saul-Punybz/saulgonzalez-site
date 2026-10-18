@@ -28,7 +28,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
               Tools
             </Link>
             <ThemeToggle />
-            <Link href="/#quiz"
+            <Link href="/#contacto"
               className="btn-gradient btn-glow text-white text-sm font-bold px-4 py-2 rounded-xl">
               Consulta gratis
             </Link>
